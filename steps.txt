@@ -1,0 +1,11 @@
+download a photo from the browser in kali linux
+open the location where the photo is downloaded
+open the terminal there and enter gedit (filename).txt to create a file
+enter whatever you want to enter in it.
+then type steghide --embed -cf (photo.jpeg) -ef (text.txt) -sf (newnamephoto.jpeg)
+then enter the password for your photo
+your embedding is done 
+now to extract it type
+steghide --extract -sf picture.jpeg
+then after this type the password you created while embedding it.
+your extracting is done
